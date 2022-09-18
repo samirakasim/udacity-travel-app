@@ -8,25 +8,25 @@
 </head>
  <body>
 <div id = "app">
-  <div class ="holder headline">
-    Weather Journal App
+  <div class ="header">
+    Travel Planner
   </div>
-  <div class ="holder zip">
-    <label for="zip">Enter City here</label>
-    <input type="text" id="city" placeholder="Enter City Here">
-    <button type="submit" id="generate">Submit</button>
+  <div class ="city">
+    <label id="city" for="city">Enter City here:</label>
+    <input type="text" id="city" placeholder="Enter City Here*">
+    <div class="button">
+      <button type="submit" id="generate">Submit</button>
+    </div>
   </div>
-  <div class ="holder feel">
-    <label for="feelings">How are you feeling today?</label>
-    <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
-    <!-- <button id="generate" type = "submit"> Generate </button> -->
+  <div class ="travelDate">
+    <label id="dates" for="date">Enter Travel Date here:</label>
+    <input type="text" id="date" placeholder="MM/DD/YEAR*">
+    <div class="button">
+      <button type="submit" id="submit">Submit</button>
+    </div>
   </div>
-  <div class ="holder entry">
-    <div class = "title">Most Recent Entry</div>
-   <div id = "entryHolder">
-    <div id = "date"></div> 
-   <div id = "temp"></div>
-   <div id = "content"></div>
+  <div id="days"></div>
+   <div id = "weather">
   </div>
   </div>
   </div>
