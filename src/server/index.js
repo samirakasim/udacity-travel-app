@@ -1,6 +1,8 @@
+// Setup empty JS object to act as endpoint for all routes
+projectData = {};
+
 var path = require('path')
 const express = require('express')
-// const mockAPIResponse = require('./mockAPI.js')
 
 const app = express()
 
@@ -28,6 +30,3 @@ app.listen(8000, function () {
     console.log('Example app listening on port 8000!')
 })
 
-// app.get('/test', function (req, res) {
-//     res.send(mockAPIResponse)
-// })
