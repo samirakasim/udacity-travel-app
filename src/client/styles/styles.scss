@@ -45,8 +45,46 @@ body{
     padding-right: 15px;
 }
 
-#entryHolder{
+.photo {
+    display:flex;
+    justify-content: center;
+    width: 60%;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
 
+.travelContainer{
+    width: 100%;
+    height:auto;
+    font-size: 26px;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.travelText{
+    padding-left: 5px
+}
+
+#travel{
+    padding-left: 5px
+}
+
+#days{
+    padding-left: 5px
+}
+
+#weather{
+    padding-left: 5px
+}
+
+
+#city-input{
+    padding-left: 5px
+}
+
+#city-label{
+    padding-right: 5px
 }
 
 #date{

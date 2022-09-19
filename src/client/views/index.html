@@ -12,21 +12,29 @@
     Travel Planner
   </div>
   <div class ="city">
-    <label id="city" for="city">Enter City here:</label>
-    <input type="text" id="city" placeholder="Enter City Here*">
+    <label id="city-label" for="city">Enter City here:</label>
+    <input type="text" id="city-input" placeholder="Enter City Here*">
     <div class="button">
       <button type="submit" id="generate">Submit</button>
     </div>
   </div>
   <div class ="travelDate">
     <label id="dates" for="date">Enter Travel Date here:</label>
-    <input type="text" id="date" placeholder="MM/DD/YEAR*">
+    <input type="text" id="date" placeholder="MM/DD/YEAR*">     
+    <label for="endDate">Enter End Travel Date:</label>
+    <input type="text" id="date-input" placeholder="MM/DD/YEAR">
     <div class="button">
       <button type="submit" id="submit">Submit</button>
     </div>
   </div>
+  <div class="travelContainer">
+    <div class="travelText">Travel Information:</div>
+  <div id="travel">
+  </div>
   <div id="days"></div>
-   <div id = "weather">
+  <div id="tripLength"></div>
+  <div id = "weather"></div>
+  <div id='photo'><img id="pic"/></div>
   </div>
   </div>
   </div>
