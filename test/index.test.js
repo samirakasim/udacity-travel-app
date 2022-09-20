@@ -1,3 +1,5 @@
+//used https://knowledge.udacity.com/questions/312363 as a reference to create listening.js.
+
 const listening = require('../src/client/js/listening');
 
 describe("Testing the listening function", () => {
