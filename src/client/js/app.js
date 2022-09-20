@@ -1,8 +1,3 @@
-// /* Global Variables */
-
-let geonamesbaseURL = 'http://api.geonames.org/searchJSON?q=';
-let apiKey = process.env.GEONAMES_API_KEY;
-
 const travelData = {}
 
 function addAction (e){
@@ -12,6 +7,10 @@ function addAction (e){
 }
 
 //Geonames api
+
+let geonamesbaseURL = 'http://api.geonames.org/searchJSON?q=';
+let apiKey = 'samira200';
+
 const getGeoCity = async (geonamesbaseURL, city, apiKey) => {
     const response = await fetch(geonamesbaseURL+city+ '&maxRows=2' +`&username=${apiKey}`)
     try {
@@ -32,7 +31,7 @@ const getGeoCity = async (geonamesbaseURL, city, apiKey) => {
 
 //WeatherBit api
 let weatherBitBaseURL = 'http://api.weatherbit.io/v2.0/forecast/daily?';
-let weatherBitApiKey = process.env.WEATHERBIT_API_KEY;
+let weatherBitApiKey = 'b93ecaa568884d9e844d0c635ae59541';
 
 
 const getWeather = async(travelData, weatherBitBaseURL, weatherBitApiKey) => {
@@ -60,7 +59,7 @@ const getWeather = async(travelData, weatherBitBaseURL, weatherBitApiKey) => {
 
 //Pixabay api
 let pixabayBaseURL = 'https://pixabay.com/api/?';
-let pixabayApiKey = process.env.PIXABAY_API_KEY;
+let pixabayApiKey = '30030314-3af8cc06c1682fe8746ff3b23';
 
 const getPicture = async(pixabayBaseURL, pixabayApiKey, travelData) => {
     console.log(travelData)
