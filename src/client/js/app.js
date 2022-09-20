@@ -58,9 +58,9 @@ const getWeather = async(travelData, weatherBitBaseURL, weatherBitApiKey) => {
         }
 } 
 
-//pixabay api
+//Pixabay api
 let pixabayBaseURL = 'https://pixabay.com/api/?';
-let pixabayApiKey = '30030314-3af8cc06c1682fe8746ff3b23';
+let pixabayApiKey = process.env.PIXABAY_API_KEY;
 
 const getPicture = async(pixabayBaseURL, pixabayApiKey, travelData) => {
     console.log(travelData)
