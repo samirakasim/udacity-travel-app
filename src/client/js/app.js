@@ -11,7 +11,7 @@ function addAction (e){
     getGeoCity(geonamesbaseURL, city, apiKey)
 }
 
-
+//Geonames api
 const getGeoCity = async (geonamesbaseURL, city, apiKey) => {
     const response = await fetch(geonamesbaseURL+city+ '&maxRows=2' +`&username=${apiKey}`)
     try {
@@ -79,9 +79,6 @@ const getPicture = async(pixabayBaseURL, pixabayApiKey, travelData) => {
 const date = new Date();
 const countdownDay = document.getElementById('days');
 const endDate = document.getElementById('tripLength');
-let day = date.getDate();
-let month = date.getMonth() + 1;
-let year = date.getFullYear();
 
 function getTravelDate (e){
 
