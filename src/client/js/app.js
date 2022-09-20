@@ -106,4 +106,4 @@ function getTravelDate (e){
         getWeather(travelData, weatherBitBaseURL, weatherBitApiKey)
 }
 
-export {addAction, getTravelDate};
+export {addAction, getTravelDate, getGeoCity, getWeather, getPicture};

@@ -1,3 +1,5 @@
+const listening = require('../client/js/listening')
+
 // Setup empty JS object to act as endpoint for all routes
 projectData = {};
 
@@ -26,7 +28,13 @@ app.get('/', function (req, res) {
 })
 
 // designates what port the app will listen to for incoming requests
-app.listen(8080, function () {
-    console.log('Example app listening on port 8000!')
+const port = 8080;
+
+const server = app.listen(port, function(){
+    listening(port);
 })
+
+// app.listen(8080, function () {
+//     console.log('Example app listening on port 8080!')
+// })
 

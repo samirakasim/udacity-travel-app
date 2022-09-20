@@ -26,5 +26,6 @@ module.exports = {
             filename: "./index.html",
         }),
         new Dotenv(),
+        new WorkboxPlugin.GenerateSW()
     ]
 }
